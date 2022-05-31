@@ -8,8 +8,8 @@ echo ""
 echo "Executing on branch: "$BRANCH
 echo ""
 
-UNAME=$OD_USER
-EMAIL=$OD_USER"@apple.com"
+UNAME=$USER
+EMAIL=$USER
 
 echo "Configuring user.name to: $UNAME and user.email to: $EMAIL"
 git config --global user.name $UNAME
