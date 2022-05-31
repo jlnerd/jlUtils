@@ -121,7 +121,7 @@ def client(
 
     for i, region_name in enumerate(region_names):
         try:
-            endpoint_url = f"https://{region_name}.blobstore.apple.com:{port}/"
+            endpoint_url = f"https://{region_name}.....:{port}/"
 
             s3_client = _boto3.client(
                 "s3",
@@ -167,13 +167,6 @@ def resource(
     Returns:
         s3_resource. botocore.resource.S3 object on which other operations may be called
         to interact with the blob store.
-        
-    Notes:
-        - To see mcqueen credentials, go to :
-            mcqueen-test: https://admin.mcqueen.apple.com/massilia_coordinator_994/
-                599400301/show/admin/namespaces
-            mcqueen-prod: https://admin.mcqueen.apple.com/massilia_coordinator_030/
-                130000101/show/admin/namespaces
     """
 
     aws_access_key_id, aws_secret_access_key = fetch_keys(
@@ -183,7 +176,7 @@ def resource(
 
     for i, region_name in enumerate(region_names):
         try:
-            endpoint_url = f"https://{region_name}.blobstore.apple.com:{port}/"
+            endpoint_url = f"https://{region_name}.....com:{port}/"
 
             s3_resource = _boto3.resource(
                 "s3",
