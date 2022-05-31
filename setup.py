@@ -204,8 +204,8 @@ def auto_tag():
 
         else:
 
-            run_command('git config --global user.email "rio-noreply@apple.com"')
-            run_command('git config --global user.name "rio"')
+            run_command('git config --global user.email ""')
+            run_command('git config --global user.name ""')
 
             run_command("git init")
             run_command("git fetch")
